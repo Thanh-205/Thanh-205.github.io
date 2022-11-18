@@ -57,8 +57,13 @@
     var y = Math.random()*500;
     var left=x+'px'
     var top=y+'px'
-    document.getElementById('lbNo').style.left=left
-    document.getElementById('lbNo').style.top=top
+    document.getElementById('lbNo').style.left=left;
+    document.getElementById('lbNo').style.top=top;
+
+    $('.title-mobile').addClass('show')
+    setTimeout(function() {
+       $('.title-mobile').removeClass('show')
+    }, 2000)
     }
     function dongy()
     {
@@ -132,11 +137,16 @@
             </div>
             <div class="button" id="lbNo"> 
                 <input type="button" value="KHÔNG BAO GIỜ" style="cursor:pointer;" onMouseMove="move()" > 
+
+                <div class="title-mobile">
+                    <span>Thôi đừng có chối mà.!! liu liu</span>
+                </div>
             </div>
         </center>
     </section>
    <script type="text/javascript">
       $(document).ready(function(){
+  
          $(document).bind("contextmenu",function(e){
            return false;
          });

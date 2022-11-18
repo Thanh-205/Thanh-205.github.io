@@ -10,31 +10,27 @@
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
-
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-
     -webkit-pointer-events: none;
     pointer-events: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-
     z-index: 2000;
     position: fixed;
     margin: auto;
     top: 12px;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -100px;
     width: 200px;
     height: 25px;
-    border: 2px solid #c5062c;
+    border: 2px solid #ff9aff;
     background-color: #fff;
 }
 
@@ -44,21 +40,17 @@
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
-
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box;
-
-    -webkit-transition: width 1s ease-in-out 1s linear;
-    -moz-transition: width 1s ease-in-out 1s linear;
-    -ms-transition: width 1s ease-in-out 1s linear;
-    -o-transition: width 1s ease-in-out 1s linear;
-    transition: width 1s ease-in-out 1s linear;
-
+    -webkit-transition: width 5s ease-in-out 5s linear;
+    -moz-transition: width 5s ease-in-out 5s linear;
+    -ms-transition: width 5s ease-in-out 5s linear;
+    -o-transition: width 5s ease-in-out 5s linear;
+    transition: width 5s ease-in-out 5s linear;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 
@@ -71,11 +63,10 @@
     top: 3px;
     height: 15px;
     font-size: 12px;
-    background: #c5062c;
-    color: #c5062c;
+    background: #ff9aff;
+    color: #ff9aff;
     line-height: 60px;
     font-weight: bold;
-    font-family: Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
 
 .pace .pace-progress:after {
@@ -345,7 +336,32 @@ form#f {
     background: 0;
     padding: 15px 15px;
 }
+.title-mobile {
+    display: none;
+}
 @media (max-width: 720px) {
+    .title-mobile.show {
+        display: block;
+    }
+    .title-mobile {
+        position: absolute;
+        background: #fff;
+        font-size: 14px;
+        padding: 3px 18px;
+        top: -48px;
+        border-radius: 10px;
+        left: 20px;
+        width: 100%;
+    }
+    .title-mobile::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        bottom: -5px;
+        transform: rotate(45deg);
+    }
     body {
         width: 100vw;
         height: 100vh;
@@ -356,7 +372,7 @@ form#f {
     }
     #dialog-box {
         width: calc(100vw - 40px);
-        top: 45% !important;
+        top: 30% !important;
     }
     #bg {
         position: absolute;
