@@ -1,0 +1,430 @@
+/* CSS Document */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.pace {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    z-index: 2000;
+    position: fixed;
+    margin: auto;
+    top: 12px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 25px;
+    border: 2px solid #c5062c;
+    background-color: #fff;
+}
+
+.pace .pace-progress {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+
+    -webkit-transition: width 1s ease-in-out 1s linear;
+    -moz-transition: width 1s ease-in-out 1s linear;
+    -ms-transition: width 1s ease-in-out 1s linear;
+    -o-transition: width 1s ease-in-out 1s linear;
+    transition: width 1s ease-in-out 1s linear;
+
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+
+    max-width: 190px;
+    position: fixed;
+    z-index: 2000;
+    display: block;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    height: 15px;
+    font-size: 12px;
+    background: #c5062c;
+    color: #c5062c;
+    line-height: 60px;
+    font-weight: bold;
+    font-family: Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+
+.pace .pace-progress:after {
+    content: attr(data-progress-text);
+    display: inline-block;
+}
+
+.pace.pace-inactive {
+    display: none;
+}
+/*	--------------------------------------------------
+	Reveal Modals
+	-------------------------------------------------- */
+
+.reveal-modal-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+.reveal-modal {
+    visibility: hidden;
+    top: 80px;
+    left: 50%;
+    margin-left: -300px;
+    width: 520px;
+    background: #eee;
+    position: absolute;
+    z-index: 101;
+    padding: 30px 40px 34px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    -box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.reveal-modal.small {
+    width: 200px;
+    margin-left: -140px;
+}
+.reveal-modal.medium {
+    width: 400px;
+    margin-left: -240px;
+}
+.reveal-modal.large {
+    width: 600px;
+    margin-left: -340px;
+}
+.reveal-modal.xlarge {
+    width: 800px;
+    margin-left: -440px;
+}
+
+.reveal-modal .close-reveal-modal {
+    font-size: 22px;
+    line-height: 0.5;
+    position: absolute;
+    top: 8px;
+    right: 11px;
+    color: #aaa;
+    text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body {
+    color: #000;
+    font-family: 'Quicksand', sans-serif;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 50px;
+    background-image: url('../img/bg.jpg');
+    font-size: 16px;
+}
+#bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    background-image: url('../img/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.msg {
+    margin: 0 auto;
+    text-align: center;
+
+    color: #fff;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: lighter;
+    color: #fff;
+}
+#divResult h2 {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+div#Result h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type='button'] {
+    color: #fff;
+    border: 0;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#co {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    position: absolute;
+    left: 900px;
+    top: 300px;
+    cursor: pointer;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding: 0;
+}
+
+#co a {
+    color: #fff;
+    display: block;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+#form {
+    background: #fff;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 1px solid plum;
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    color: #fff;
+}
+
+#form:focus {
+    background: plum;
+    outline: 0;
+}
+.btn-submit {
+    position: absolute;
+    right: 40px;
+}
+#gui {
+    padding: 0 20px;
+    height: 40px;
+    background-color: plum;
+}
+form#f {
+    display: flex;
+    align-items: center;
+}
+#traloi h1 {
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+}
+#traloi h1 center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#traloi h1 center img {
+    margin-left: 10px;
+}
+#traloi p {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+#divResult2 p {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+#divResult3 p {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+#dialog-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+    display: none;
+}
+
+#dialog-box {
+    background: #eee;
+    width: 328px;
+    position: absolute;
+    z-index: 5000;
+    display: none;
+}
+
+#dialog-box .dialog-content {
+    text-align: left;
+    padding: 10px;
+    margin: 13px;
+    font-size: 15px;
+}
+
+#dialog-box .dialog-content p {
+    font-weight: 600;
+    margin: 0;
+}
+
+#dialog-box .dialog-content ul {
+    margin: 10px 0 10px 20px;
+    padding: 0;
+    height: 100px;
+}
+#msb-nt {
+    background: #c5062c;
+    border: 0;
+    width: 50px;
+    margin-left: 200px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+#dialog-box .dialog-content a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+#lbNo {
+    position: absolute;
+    left: 700px;
+    top: 300px;
+    padding: 15px 15px;
+}
+#lbNo input {
+    background: 0;
+}
+@media (max-width: 720px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    #dialog-overlay {
+        width: 100vw !important;
+    }
+    #dialog-box {
+        width: calc(100vw - 40px);
+        top: 45% !important;
+    }
+    #bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .box-new {
+        position: fixed;
+    }
+    #co {
+        left: 50%;
+        transform: translateX(-50%);
+
+        font-size: 14px;
+        width: 50%;
+    }
+    #lbNo {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 400px;
+        z-index: 500;
+    }
+    .reveal-modal.large {
+        width: calc(100vw - 40px);
+        margin: 0;
+        padding: 20px 10px;
+    }
+    #form {
+        width: 100%;
+    }
+    .reveal-modal {
+        position: fixed;
+        left: 10px;
+    }
+    .box-new h1 {
+        font-size: 40px;
+    }
+    .box-new h2 {
+        font-size: 20px;
+    }
+    .btn-submit {
+        right: 10px;
+    }
+    #traloi p {
+        font-size: 16px;
+    }
+}
+.button {
+    color: #8ce436;
+    border: 1px solid #8ce436;
+    box-shadow: 0 0 5px #8ce436, 0 0 5px inset;
+    background-color: #000000cc;
+}
+.button a::after {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 6px;
+    width: calc(100% - 14px);
+    height: 70%;
+    border: 1px solid #8ce436;
+    box-shadow: 0 0 5px #8ce436 inset;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.button a:hover::after {
+    opacity: 1;
+    z-index: 0;
+}

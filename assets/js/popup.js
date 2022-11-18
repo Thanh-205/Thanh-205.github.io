@@ -62,7 +62,7 @@ $(document).ready(function () {
 });
 function Yeu() {
     $('#divResult').fadeOut(0);
-    $('#divResult').html("</br><h2>haha đừng có chối nữa nhé ! <img src='img/3.gif'</img></h2>");
+    $('#divResult').html("</br><h2>HaHa đừng có chối nữa nhé ! <img src='./assets/img/1.gif'</img></h2>");
     $('#divResult').fadeIn(2000, function () {
         $('#divResult2').fadeOut(0);
     });
