@@ -178,15 +178,17 @@ h1 {
     font-weight: lighter;
     color: #fff;
 }
-#divResult h2 {
+div#divResult h2 {
     font-size: 20px;
     color: #000;
     font-weight: bold;
-}
-div#Result h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: red;
+}
+div#divResult h2 img {
+    margin-left: 10px;
 }
 input[type='button'] {
     color: #fff;
@@ -252,13 +254,11 @@ form#f {
     font-size: 30px;
     color: #000;
     font-weight: bold;
-}
-#traloi h1 center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#traloi h1 center img {
+#traloi h1 img {
     margin-left: 10px;
 }
 #traloi p {
