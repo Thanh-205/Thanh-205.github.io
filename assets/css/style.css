@@ -340,10 +340,10 @@ form#f {
     position: absolute;
     left: 700px;
     top: 300px;
-    padding: 15px 15px;
 }
 #lbNo input {
     background: 0;
+    padding: 15px 15px;
 }
 @media (max-width: 720px) {
     body {
